@@ -40,10 +40,10 @@
 		$body.='<p><strong>имя:</strong>'.$_POST['username']. '</p>';
 	}	
 	if(trim(!empty($_POST['userposition']))){
-		$body.='<p><strong>имя:</strong>'.$_POST['userposition']. '</p>';
+		$body.='<p><strong>Должность:</strong>'.$_POST['userposition']. '</p>';
 	}	
-	if(trim(!empty($_POST['fieldOfactivity']))){
-		$body.='<p><strong>имя:</strong>'.$_POST['fieldOfactivity']. '</p>';
+	if(trim(!empty($_POST['field']))){
+		$body.='<p><strong>Сфера деятельности:</strong>'.$_POST['field']. '</p>';
 	}	
 	if(trim(!empty($_POST['usermail']))){
 		$body.='<p><strong>почта пользователя:</strong>'.$_POST['usermail']. '</p>';
