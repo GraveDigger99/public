@@ -22,13 +22,13 @@
 	*/
 
 	//От кого письмо
-	$mail->setFrom('from@gmail.com', 'Зайцев'); // Указать нужный E-mail
+	$mail->setFrom('from@gmail.com', 'Зайцев.ru'); // Указать нужный E-mail
 	//Кому отправить
 	$mail->addAddress('ibrahimovaydin@mail.ru'); // Указать нужный E-mail
 
 
 	//Тема письма
-	$mail->Subject = 'Зайцев';
+	$mail->Subject = 'Зайцев.ru';
 
 	//Тело письма
 	$body = '<h1>письмо!</h1>';
@@ -39,17 +39,17 @@
 	if(trim(!empty($_POST['username']))){
 		$body.='<p><strong>имя:</strong>'.$_POST['username']. '</p>';
 	}	
-	if(trim(!empty($_POST['userposition']))){
-		$body.='<p><strong>Должность:</strong>'.$_POST['userposition']. '</p>';
-	}	
-	if(trim(!empty($_POST['field']))){
-		$body.='<p><strong>Сфера деятельности:</strong>'.$_POST['field']. '</p>';
-	}	
 	if(trim(!empty($_POST['usermail']))){
 		$body.='<p><strong>почта пользователя:</strong>'.$_POST['usermail']. '</p>';
 	}	
 	if(trim(!empty($_POST['userphone']))){
 		$body.='<p><strong>телефон пользователя:</strong>'.$_POST['userphone']. '</p>';
+	}	
+	if(trim(!empty($_POST['userposition']))){
+		$body.='<p><strong>Должность:</strong>'.$_POST['userposition']. '</p>';
+	}	
+	if(trim(!empty($_POST['field']))){
+		$body.='<p><strong>Сфера деятельности:</strong>'.$_POST['field']. '</p>';
 	}	
 	/*
 	//Прикрепить файл
